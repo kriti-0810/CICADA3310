@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICADA 3310 - TechnoGreen Challenge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">
+        <img src="loss.png" alt="TechnoGreen Logo">
+    </div>
+
+    <div id="content">
+        <header>
+            <h1>CICADA 3310: TechnoGreen Challenge</h1>
+            <p id="motto">Decoding the Future of Environmental Solutions</p>
+        </header>
+
+        <main>
+            <section id="introduction">
+                <h2>Welcome, Environmental Decoder</h2>
+                <p>Unravel the mysteries of TechnoGreen Solutions Limited, a leader in environmental consulting and technology. Your mission: decode their vision, values, and innovations.</p>
+            </section>
+
+            <section id="riddle">
+                <h2>Cryptic Riddle</h2>
+                <p>"I transform waste to wonder, turn pollution to purity. With nature's wisdom and human ingenuity, I craft solutions unseen but deeply felt. What am I?"</p>
+                <input type="text" id="riddleAnswer" placeholder="Enter your answer">
+                <button onclick="checkRiddle()">Submit Answer</button>
+                <p id="riddleResult"></p>
+            </section>
+
+            <section id="ciphers">
+                <h2>Decipher TechnoGreen's Core Values</h2>
+                
+                <div class="cipher">
+                    <h3>Caesar Cipher (Shift 3)</h3>
+                    <p>Ghfrgh: "Lqqrydwlrq iru d vxvwdlqdeoh ixwxuh"</p>
+                    <input type="text" id="caesarInput" placeholder="Enter decrypted message">
+                    <button onclick="checkCaesar()">Verify</button>
+                    <p id="caesarResult"></p>
+                </div>
+
+                <div class="cipher">
+                    <h3>Binary Code</h3>
+                    <p>01001011 01101110 01101111 01110111 01101100 01100101 01100100 01100111 01100101 00100000 01000011 01101111 01101110 01110011 01110101 01101100 01110100 01101001 01101110 01100111</p>
+                    <input type="text" id="binaryInput" placeholder="Enter decoded message">
+                    <button onclick="checkBinary()">Verify</button>
+                    <p id="binaryResult"></p>
+                </div>
+
+                <div class="cipher">
+                    <h3>Reverse Text</h3>
+                    <p>ygolonhceT latnemnorivnE</p>
+                    <input type="text" id="reverseInput" placeholder="Enter corrected text">
+                    <button onclick="checkReverse()">Verify</button>
+                    <p id="reverseResult"></p>
+                </div>
+            </section>
+
+            <section id="final-message" style="display: none;">
+                <h2>Congratulations, Environmental Decoder!</h2>
+                <p>You've unlocked the essence of TechnoGreen Solutions Limited. Their commitment to innovation, knowledge consulting, and environmental technology drives a sustainable future. Remember their motto: "Your future, our care."</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Sponsored by TechnoGreen Solutions Limited - Translating Information to Knowledge and Knowledge to Solutions</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
